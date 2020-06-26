@@ -1,6 +1,6 @@
 type Query {
   movies : [Movie]
-  movieById(id: ID): Movie 
+  movieById(id: ID!): Movie 
 }
 
 type Movie {
@@ -10,6 +10,6 @@ type Movie {
 }
 
 type Review {
-  id: ID!
-  review : String
+  reviewId: ID!
+  reviewComment : String
 }
