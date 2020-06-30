@@ -1,11 +1,21 @@
 package org.shahul.graphql.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Movie {
 
 	private int id;
 	private String name;
-	private Review review;
+	private List<Review> reviews;
+	
+	
 
+	public Movie(int id, String name, List<Review> reviews) {
+		this.id = id;
+		this.name = name;
+		this.reviews = reviews;
+	}
 	public int getId() {
 		return id;
 	}
@@ -18,11 +28,11 @@ public class Movie {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Review getReview() {
-		return review;
-	}
-	public void setReview(Review review) {
-		this.review = review;
+	public List<Review> getReviews() {
+		if(reviews==null) {
+			return new ArrayList<>();
+		}
+		return reviews;
 	}
 	
 	

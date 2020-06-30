@@ -4,6 +4,12 @@ public class Review {
 
 	private int reviewId;
 	private String reviewComment;
+	
+	
+	public Review(int reviewId, String reviewComment) {
+		this.reviewId = reviewId;
+		this.reviewComment = reviewComment;
+	}
 	public int getReviewId() {
 		return reviewId;
 	}

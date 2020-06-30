@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 
 @Component
-public class MovieResolver implements GraphQLQueryResolver {
+public class MovieQueryResolver implements GraphQLQueryResolver {
 	
 	@Autowired
 	MovieService movieService;
